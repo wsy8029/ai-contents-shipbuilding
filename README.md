@@ -1,8 +1,12 @@
 # ai-contents-shipbuilding
 [조선 산업에서의 AI 융합 실습] 콘텐츠
 
-## 요청 사항(개별 콘텐츠 포함 내용)
+## SRS
 ### 1. 용접 품질검사를 위한 딥러닝 AI 구현 실습
+  - 구조 : 기본 이미지와 노이즈 포함 이미지에 대한 Binary Classification
+  - 데이터 : 원본 이미지 1개 -> augmentation을 통한 정상 이미지 데이터셋 생성, gaussian noise를 추가한 비정상 이미지 데이터셋 생성
+  - 모델 : CNN
+  - 활용 : 코드 실행시마다 랜덤 이미지 모델 inference 및 사진과 classification 결과 출력
 ### 2. 용접 아크 환경에서 특징점의 동작 인식 및 용접 궤적 추적 AI 알고리즘 구현 실습
 ### 3. 자율운항 선박을 위한 운항 경로 계획, 항로 패턴 분석 AI 구현 실습
 
